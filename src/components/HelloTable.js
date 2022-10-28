@@ -22,6 +22,10 @@ const columns = [
         id: 'lastName',
         cell: info => <i>{info.getValue()}</i>,
         header: () => <span>Last Name</span>
+    }),
+    columnHelper.accessor('age', {
+        header: 'Age',
+        footer: info => info.column.id
     })
 ]
 
